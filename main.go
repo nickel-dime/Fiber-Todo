@@ -24,7 +24,7 @@ func main() {
 	setupRoutes(app)
 
 	// Listen on server 8000 and catch error if any
-	err = app.Listen(":27017")
+	err = app.Listen(":8000")
 
 	// handle error
 	if err != nil {

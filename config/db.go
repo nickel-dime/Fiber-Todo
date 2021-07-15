@@ -21,7 +21,7 @@ var MI MongoInstance
 
 // ConnectDB - database connection
 func ConnectDB() {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:4000"))
 	// "mongodb://localhost:27017"
 	// os.getenv(MONGO_URI)
 	if err != nil {
